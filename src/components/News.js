@@ -11,7 +11,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
-  // document.title = `Scoopup - ${this.capitalizeFirstLetter(props.category)}`;
+  
 
 
 
@@ -40,6 +40,7 @@ const updateNews = async()=>{
 
 useEffect(() => {
   updateNews();
+   document.title = `Scoopup - ${capitalizeFirstLetter(props.category)}`;
 
 }, [])
 
